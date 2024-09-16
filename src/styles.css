@@ -1,0 +1,87 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: chocolate;
+}
+
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-form input,
+.expense-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: antiquewhite;
+}
+
+.expense-list {
+  margin-top: 20px;
+}
+
+.expense-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+}
+
+.expense-list th,
+.expense-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.expense-list th {
+  background-color: #f4f4f4;
+}
+
+.total {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.expense-button {
+  width: 150px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .expense-form {
+    flex-direction: column;
+  }
+
+  .expense-list table {
+    display: block;
+    width: 100%;
+  }
+
+  .expense-list thead {
+    display: none;
+  }
+
+  .expense-list tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .expense-list td {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .expense-list td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}
