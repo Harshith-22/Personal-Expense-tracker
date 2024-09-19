@@ -38,12 +38,14 @@ const ExpenseForm = ({ addExpense }) => {
         type="number"
         placeholder="Amount"
         value={amount}
+        className="amount-input"
         onChange={(e) => setAmount(e.target.value)}
       />
       <input
         type="date"
         placeholder="Date"
         value={date}
+        className="date-input"
         onChange={(e) => setDate(e.target.value)}
       />
       <button className="expense-button" type="submit">

@@ -33,12 +33,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <ExpenseForm addExpense={addExpense} />
-      <ExpenseList
-        expenses={expenses}
-        editExpense={editExpense}
-        deleteExpense={deleteExpense}
-      />
+      <h1> Personal Expense Tracker </h1>
+      <div>
+        <h2>Create Expense:</h2>
+        <ExpenseForm addExpense={addExpense} />
+      </div>
+      <div>
+        <h2>Expense List:</h2>
+        <ExpenseList
+          expenses={expenses}
+          editExpense={editExpense}
+          deleteExpense={deleteExpense}
+        />
+      </div>
     </div>
   );
 };

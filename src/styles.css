@@ -1,13 +1,16 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: chocolate;
-}
-
-.App {
-  max-width: 800px;
+  background-color: #e5d9f2;
+  min-height: 100vh;
   margin: auto;
   padding: 20px;
+  color: #7310eb;
+}
+
+h2 {
+  text-align: left;
+  color: #7310eb;
 }
 
 .expense-form {
@@ -20,9 +23,14 @@
 .expense-form button {
   padding: 10px;
   font-size: 1rem;
-  background-color: antiquewhite;
+  background-color: #f5efff;
 }
-
+/* .amount-input {
+  max-width: 400px;
+}
+.date-input {
+  max-width: 400px;
+} */
 .expense-list {
   margin-top: 20px;
 }
@@ -30,7 +38,7 @@
 .expense-list table {
   width: 100%;
   border-collapse: collapse;
-  background-color: antiquewhite;
+  background-color: #f5efff;
 }
 
 .expense-list th,
@@ -39,9 +47,17 @@
   padding: 10px;
   text-align: left;
 }
+.expense-list button {
+  color: #f5efff;
+  background-color: #7310eb;
+  border-radius: 8px;
+  border: 1px solid #f5efff;
+  margin: 1px;
+  padding: 10px;
+}
 
 .expense-list th {
-  background-color: #f4f4f4;
+  background-color: #f5efff;
 }
 
 .total {
