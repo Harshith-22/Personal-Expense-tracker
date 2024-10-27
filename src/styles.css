@@ -1,7 +1,8 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: #fcfcfc;
+
+  background: radial-gradient(ellipse, #dec8fa, #dcc3fa, #994ef5);
   min-height: 100vh;
   margin: auto;
   padding: 20px;
